@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">📺 YouTube</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search" id="searchInput" />
+      <button onclick="search()">🔍</button>
+    </div>
+    <div class="profile">👤</div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <a href="#">🏠 Home</a>
+      <a href="#">🔥 Trending</a>
+      <a href="#">📺 Subscriptions</a>
+      <a href="#">📚 Library</a>
+    </aside>
+
+    <main class="video-grid" id="videoGrid">
+      <!-- Example Video Cards -->
+      <div class="video-card">
+        <img src=KUET.jpg alt="Video Thumbnail">
+        <h4>Annual Feast of KUET Vlog</h4>
+        <p>Abrar Jawad</p>
+      </div>
+      <div class="video-card">
+        <img src=NDC.jpg alt="Video">
+        <h4>First Day at College</h4>
+        <p>Abrar Jawad</p>
+      </div>
+      <!-- Add more video cards dynamically or manually -->
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

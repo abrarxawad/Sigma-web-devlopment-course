@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(177, 223, 225);
+        }
+        
+        nav {
+            background-color: #3a3764;
+            padding: 30px;
+            position: sticky;
+            top: 0px;
+        }
+        
+        .nav-button {
+            background-color: #159119;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 99px;
+            cursor: pointer;
+            font-size: 16px;
+            position: sticky;
+            top: 0px;
+        }
+        
+        .nav-button:hover {
+            background-color: #45a049;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 50px 20px;
+        }
+        
+        .blocks-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        
+        .block {
+            width: 48%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+        
+        .block-left {
+            background-color: #f9edf4;
+        }
+        
+        .block-right {
+            background-color: #fff2e6;
+        }
+        
+        .content-block {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+         .floating-circle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #ff5722;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000;
+           
+        }
+        
+        h1, h2 {
+            color: #333;
+        }
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <button class="nav-button">Home </button>
+        <button class="nav-button">Contact </button>
+        <button class="nav-button">News </button>
+        <button class="nav-button">Others </button>
+    </nav>
+    
+    <div class="container">
+        <h1>Welcome to My Page</h1>
+        
+        <div class="blocks-container">
+            <div class="block block-left">
+                <h2>Left Block</h2>
+                <p>This is the content for the left block. You can put any content here.</p>
+            </div>
+            
+            <div class="block block-right">
+                <h2>Right Block</h2>
+                <p>This is the content for the right block. These two blocks are side by side.</p>
+            </div>
+        </div>
+        
+        <div class="content-block">
+            <h2>Main Content Section</h2>
+            <p>This is the main content area below the two blocks. You can write more detailed information here.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl.</p>
+        </div>
+        
+    </div>
+       <div class="floating-circle">
+        Call 
+    </div>
+    
+</body>
+</html>

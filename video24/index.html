@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <style>
+    .box{
+        display: inline-block;
+        border: 2px solid black;
+        box-shadow: 5px 10px 4px 3px;  /*horizontal offset, vertical offset, blur , spred */
+        box-sizing: border-box 40px;
+        padding: 20px;
+    }
+    .box2{
+        display: inline-block;
+        border: 2px solid blue;
+        box-shadow: 5px 10px 4px 3px blue;
+        box-sizing: border-box 40px;
+        padding: 20px;
+        margin: 10px;
+    }
+    .box3{
+        display: inline-block;
+        border: 2px solid rgb(52, 221, 247);
+        box-shadow: 5px 10px 4px 3px rgb(10, 188, 228);
+        box-sizing: border-box 40px;
+        padding: 20px;
+        margin: 10px;
+    }
+    .box4{
+        text-shadow:  2px 4px 6px  rgb(88, 255, 11);
+        font-size: 100px;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="box">Apple</div>
+    <div class="box2">Banana</div>
+    <div class="box3">Mango</div>
+    <p class="box4">My name is Abrar Jawad</p>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #b5b4c6;
+            padding: 20px 20px;
+        }
+
+        .logo {
+            color: #d41515;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: rgb(163, 61, 61);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+            background-color: rgb(173, 199, 199);
+
+
+        }
+
+        .box1 {
+            height: 50px;
+            width: 40px;
+
+
+            background-color: rgb(133, 133, 133);
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff9800;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">MySite</div>
+        <div class="nav-links">
+
+
+        </div>
+        <div class="box1">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            margin: 5px;
+            border: 2px solid black;
+            padding: 10px;
+            color: rgb(198, 14, 45);
+            background-color: beige;
+            height: 100px;
+            box-sizing: border-box;   /*it will combine content+ padding+ border */
+        }
+        .box2{
+            margin: 5px;
+            border: 2px solid black;
+            padding: 10px;
+            color: rgb(198, 14, 45);
+            background-color: beige;
+            height: 100px;
+            box-sizing: border-box; 
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box box1">Now I will create a Box</div>
+    <div class="box box2 ">This is another box</div>
+    
+    
+</body>
+</html>

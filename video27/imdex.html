@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+    *{
+       margin: 0; 
+       padding: 0;
+      
+    }
+    div{
+        border: 2px solid black;
+        padding: 50px;
+        margin: 50px;
+    }
+    .box1{
+        background-color: aqua;
+        left: -10px;
+        width: 50vw;
+
+        position: relative;
+        /* EXCEPTIOPN: Transform, Perspective, filter 
+
+        transform: translate();
+        filter: invert(0);
+        perspective: 0em;
+
+        */
+  
+    }
+    .box2{
+        background-color: aquamarine;
+        position: relative;
+        top:-80px;
+        right: -100px;
+        width: 50vw;
+    }
+    .box3{
+        background-color: bisque;
+        position: relative;
+        top: -150px;
+        left: 200px;
+        width: 50vw;
+    }
+    .box4{
+        background-color: pink;
+        position: relative;
+        top:-220px ;
+        left: 300px ;
+        width: 50vw;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">Fariha Afrin</div>
+    <div class="box2">Abrar Jawad</div>
+    <div class="box3">Jarin Sadaf</div>
+    <div class="box4">Nabiha Tasnim</div>
+</body>
+</html>
